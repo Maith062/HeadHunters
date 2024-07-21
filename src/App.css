@@ -6,7 +6,6 @@
 }
 
 .home,
-.candidate,
 .recruiter,
 .community,
 .sign-up {
@@ -18,37 +17,54 @@
 }
 
 .candidate {
-  background-image: url('/public/logo192.png');
+  /* background-image: url('../candidate_main_img.jpeg'); */
+  background-image:  linear-gradient(to bottom right, rgb(28, 27, 27) 0%, rgb(181, 135, 135) 100%);
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .recruiter {
-  background-image: url('/public/logo192.png');
+  background-image:  linear-gradient(to bottom right, rgb(28, 27, 27) 0%, rgb(181, 135, 135) 100%);
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .community {
-  background-image: url('/public/logo192.png');
+  background-image:  linear-gradient(to bottom right, rgb(28, 27, 27) 0%, rgb(181, 135, 135) 100%);
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .sign-up {
-  background-image: url('/public/logo192.png');
+  background-image:  linear-gradient(to bottom right, rgb(28, 27, 27) 0%, rgb(181, 135, 135) 100%);
   background-position: center;
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
 }

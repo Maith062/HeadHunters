@@ -8,12 +8,17 @@ import {Button} from './Button';
 
 import './Navbar.css';
 
+import { useTranslation } from 'react-i18next';
+
+
 // import Logo from './public/pied-piper-hat.svg';
 
 
 function Navbar(){
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const { t } = useTranslation();  // Define t using the useTranslation hook
+
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -46,31 +51,31 @@ function Navbar(){
                     <ul className={click ? 'nav-menu active': 'nav-menu'}>
                         <li className = 'nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                                {t('home')}
                             </Link>
                         </li>
                         <li className = 'nav-item'>
                             <Link to='/candidate' className='nav-links' onClick={closeMobileMenu}>
-                                Candidates
+                                {t('candidates')}
                             </Link>
                         </li>
                         <li className = 'nav-item'>
                             <Link to='/recruiter' className='nav-links' onClick={closeMobileMenu}>
-                                Recruiters
+                                {t('recruiters')}
                             </Link>
                         </li>
                         <li className = 'nav-item'>
                             <Link to='/community' className='nav-links' onClick={closeMobileMenu}>
-                                Community
+                                {t('community')}
                             </Link>
                         </li>
                         <li className = 'nav-item'>
                             <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Create Account
+                                {t('createAccount')}
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Create ACCOUNT</Button>}
+                    {button && <Button buttonStyle='btn--outline'>{t('createAccount')}</Button>}
                 </div>
             </nav>
         </>

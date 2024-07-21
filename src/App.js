@@ -6,6 +6,7 @@ import Home from "./components/pages/Home";
 import Candidate from "./components/pages/Candidate";
 import Community from "./components/pages/Community";
 import Recruiter from "./components/pages/Recruiter";
+import SignUp from './components/pages/SignUp';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/candidate' element={<Candidate/>}/>
         <Route path='/recruiter' element={<Recruiter/>}/>
         <Route path='/community' element={<Community/>}/>
+        <Route path='/sign-up' element={<SignUp/>}/>
 
       </Routes>
     </Router>
